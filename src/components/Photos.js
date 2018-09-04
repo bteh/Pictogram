@@ -1,14 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Picture from './Picture'
 
-class Photos extends Component {
-	render(){
-		return(
-			<div className="photo-grid">
-              {this.props.posts.map( (post,index) => <Picture key={index} post={post}/> )}
-			</div>
+function Photos(props){
+	return(
+		<div className="photo-grid">
+          {props.posts.map( (post,index) => <Picture key={index} post={post} onRemovePhoto = {props.onRemovePhoto}/> )}
+		</div>
 		)
-	}
 }
+
 
 export default Photos;
