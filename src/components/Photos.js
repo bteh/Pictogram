@@ -12,7 +12,7 @@ function Photos(props){
             .sort((x,y) => {
             	return y.id - x.id
             })
-          	.map( (post,index) => <Picture key={index} post={post} onRemovePhoto = {props.onRemovePhoto}/> )}
+          	.map( (post, index) => <Picture key={index} post={post} {...props} index={index}/> )}
 		</div>
 	</div>
 		)
@@ -20,7 +20,6 @@ function Photos(props){
 
 Photos.propTypes = {
 	posts: PropTypes.array.isRequired,
-	onRemovePhoto: PropTypes.func.isRequired
 }
 
 export default Photos;
