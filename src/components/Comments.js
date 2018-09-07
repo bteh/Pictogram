@@ -12,6 +12,7 @@ class Comments extends Component {
         //access comment field
         const comment = event.target.elements.comment.value
         this.props.addComment(comment, this.props.id)
+        event.target.elements.comment.value = ''
 
     }
 
