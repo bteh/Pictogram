@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './styles/styles.css';
-import {BrowserRouter} from 'react-router-dom'
+import {BrowserRouter, HashRouter} from 'react-router-dom'
 import registerServiceWorker from './registerServiceWorker';
 import {createStore} from 'redux'
 import rootReducer from './redux/reducer'
@@ -11,5 +11,5 @@ import App from './components/App'
 
 const store = createStore(rootReducer)
 
-ReactDOM.render(<Provider store={store}><BrowserRouter><App /></BrowserRouter></Provider>, document.getElementById('root'));
+ReactDOM.render(<Provider store={store}><HashRouter><App /></HashRouter></Provider>, document.getElementById('root'));
 registerServiceWorker();
