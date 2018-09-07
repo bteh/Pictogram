@@ -15,3 +15,11 @@ export function addPost(post){
 
 	}
 }
+
+//adding comments 
+export function addComment(comment){
+	return{
+		type: 'ADD_COMMENT',
+		comment
+	}
+}
