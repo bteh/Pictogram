@@ -7,9 +7,6 @@ import Single from './components/Single'
 
 
 class Main extends Component {
-	constructor(){
-		super()
-	}
 
 
   render() {
