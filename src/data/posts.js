@@ -9,7 +9,7 @@ const posts = [{
 	 }, {
 	 id: 2,
 	 description: "Japan's Cherry Blossom",
-	 imageLink: "https://www.desktopbackground.org/p/2015/07/05/974498_japan-scenery-wallpapers_1366x768_h.jpg"
+	 imageLink: "https://cdn10.phillymag.com/wp-content/uploads/sites/3/2018/03/cherry-blossoms-900x600.jpg"
 	 }]
 
 export default posts
